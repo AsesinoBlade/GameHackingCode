@@ -55,13 +55,16 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH;WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <AdditionalIncludeDirectories>C:\Users\gsaee\Projects\Allegro5\include;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Include;C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\include\detours;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\lib;C:\Users\gsaee\Projects\Allegro5\lib;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Lib\x86;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);allegro-5.0.10-monolith-md.lib;allegro-5.0.10-monolith-md.lib;d3dx9d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -72,8 +75,9 @@
       <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH;.;WINDOWS_IGNORE_PACKING_MISMATCH;WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <AdditionalIncludeDirectories>C:\Users\gsaee\Projects\Allegro5\include;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Include;C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\include\detours;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,6 +87,8 @@
       <FixedBaseAddress>
       </FixedBaseAddress>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\lib;C:\Users\gsaee\Projects\Allegro5\lib;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Lib\x86;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);allegro-5.0.10-monolith-mt.lib;d3dx9.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

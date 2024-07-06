@@ -47,16 +47,17 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\gsaee\Projects\Allegro5\include;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Include;C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\include\detours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH;WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>allegro-5.0.10-monolith-md-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md-debug.lib;%(AdditionalDependencies);allegro-5.0.10-monolith-md.lib;allegro-5.0.10-monolith-md.lib;d3dx9d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\lib;C:\Users\gsaee\Projects\Allegro5\lib;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
@@ -70,14 +71,17 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Users\gsaee\Projects\Allegro5\include;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Include;C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\include\detours;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WINDOWS_IGNORE_PACKING_MISMATCH;.;WINDOWS_IGNORE_PACKING_MISMATCH;WINDOWS_IGNORE_PACKING_MISMATCH</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);allegro-5.0.10-monolith-mt.lib;d3dx9.lib</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\Users\gsaee\Projects\vcpkg\installed\x64-windows\lib;C:\Users\gsaee\Projects\Allegro5\lib;C:\Users\gsaee\Projects\GameHackingCode\Deps\DirectX\Lib\x86;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
