@@ -11,7 +11,7 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
+
 
 # Fortran module files
 *.mod
@@ -36,10 +36,7 @@
 
 #other directories
 */ipch/*
-*/Debug/*
-*/Release/*
 */BuildTemp/*
 ipch/*
-Debug/*
 Release/*
 BuildTemp/*
