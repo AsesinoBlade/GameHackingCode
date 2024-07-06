@@ -32,6 +32,7 @@
 *.suo
 *.sdf
 *.user
+.vs/
 
 #other directories
 */ipch/*

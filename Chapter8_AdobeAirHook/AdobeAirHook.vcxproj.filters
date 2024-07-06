@@ -56,8 +56,5 @@
     <ClCompile Include="ExecutableModule.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\Chapter7_CodeInjection_DLL\dllmain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
